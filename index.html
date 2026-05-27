@@ -1,0 +1,58 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEM Helper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>STEM Helper</h1>
+        <button id="themeBtn">Toggle Dark Mode</button>
+    </header>
+
+    <main>
+
+        <section class="card">
+            <h2>Quadratic Solver</h2>
+
+            <input type="number" id="a" placeholder="a">
+            <input type="number" id="b" placeholder="b">
+            <input type="number" id="c" placeholder="c">
+
+            <button onclick="solveQuadratic()">Solve</button>
+
+            <p id="quadraticResult"></p>
+        </section>
+
+
+        <section class="card">
+            <h2>Trig Calculator</h2>
+
+            <input type="number" id="angle" placeholder="Angle in degrees">
+
+            <button onclick="calculateTrig()">Calculate</button>
+
+            <p id="trigResult"></p>
+        </section>
+
+
+        <section class="card">
+            <h2>Kinematics Calculator</h2>
+
+            <input type="number" id="u" placeholder="Initial velocity">
+            <input type="number" id="acceleration" placeholder="Acceleration">
+            <input type="number" id="time" placeholder="Time">
+
+            <button onclick="calculateVelocity()">Calculate</button>
+
+            <p id="physicsResult"></p>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
